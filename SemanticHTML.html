@@ -15,8 +15,8 @@
         background-color: purple;
       }
       #right-align {
-          display: inline-flex;
-      } 
+        display: inline-flex;
+      }
       .header {
         display: flex;
         margin: 5px;
@@ -41,13 +41,39 @@
         margin: 5px;
         text-align: right;
       }
+      .left-section-main {
+          display: inline-flex;
+          justify-content: space-between;
+      }
+      article {
+          display: inline-flex;
+          justify-content: space-between;
+      }
+      .right-section-article {
+          background: green;
+          position: right;
+          margin: 5px;
+      }
+      .left-section-article {
+          background-color: aqua;
+          position: left;
+          margin: 5px;
+      }
+      main {
+        display: inline-flex;
+        justify-content: space-between;
+      }
+      .right-section-main {
+          background-color: blueviolet;
+          margin: 5px;
+      }
     </style>
   </head>
   <body>
     <!-- this is our header section -->
     <header>
-        <div class="header">
-            <div id="right-align">
+      <div class="header">
+        <div id="right-align">
           <div class="navbar-title">HTML Semantics</div>
           <!-- nav will indicate that the items contained here are navegation links -->
           <nav>
@@ -64,39 +90,50 @@
     </header>
 
     <main>
+        <div class="left-section-main">
       <!-- this indicates all of this area is one article which may have multiple sections -->
       <article>
-        <h1>All about our products</h1>
-        <p>Summary</p>
-        <!-- sections of the articles -->
-        <section>
-          <h1>Use 1 for our products</h1>
-          <p>Description</p>
-        </section>
-        <section>
-          <h1>Use 2 for our products</h1>
-          <p>Description</p>
-        </section>
-        <section>
-          <h1>Use 3 for our products</h1>
-          <p>Description</p>
-        </section>
+        <div class="left-section-article">
+          <h1>All about our products</h1>
+          <p>Summary</p>
+          <!-- sections of the articles -->
+          <section>
+            <h1>Use 1 for our products</h1>
+            <p>Description</p>
+          </section>
+          <section>
+            <h1>Use 2 for our products</h1>
+            <p>Description</p>
+          </section>
+          <section>
+            <h1>Use 3 for our products</h1>
+            <p>Description</p>
+          </section>
+          </div>
+          <!-- aside is complementary or supportive content for the main content -->
+          <div class="right-section-article">
+          <aside>
+            <time>12:00pm</time>
+            <p>this is the current time</p>
+          </aside>
+          <aside>
+            <h1>This is cool</h1>
+            <p>summary of aside note</p>
+          </aside>
+        </div>
+        </div>
       </article>
 
-      <!-- aside is complementary or supportive content for the main content -->
-      <aside>
-        <time>12:00pm</time>
-        <p>this is the current time</p>
-      </aside>
-      <aside>
-        <h1>This is cool</h1>
-        <p>summary of aside note</p>
-      </aside>
+      <div class="right-section-main">
+        <aside>  
+            <h1>About the industry</h1>
+            <p>this is a quick text</p>
+        </aside>
+      </div>  
+
     </main>
 
-    <aside>
-      <h1>About the industry</h1>
-    </aside>
+    </div>
 
     <!-- footer is the section that will be at the bottom of the page -->
     <footer>
