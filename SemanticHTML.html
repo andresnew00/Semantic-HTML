@@ -43,7 +43,7 @@
       }
       .left-section-main {
           display: inline-flex;
-          justify-content: space-between;
+          align-content: stretch;
       }
       article {
           display: inline-flex;
@@ -62,10 +62,24 @@
       main {
         display: inline-flex;
         justify-content: space-between;
+        width: 100%;
+        align-content: stretch;
       }
       .right-section-main {
           background-color: blueviolet;
           margin: 5px;
+      }
+      footer {
+        display: inline-flex;
+        justify-content: space-between;
+        background-color: lawngreen;
+        width: 100%;
+      }
+      .right-footer-section {
+        display: inline-flex;
+      }
+      body {
+          width: 50%;
       }
     </style>
   </head>
@@ -144,15 +158,17 @@
           <li>legal</li>
         </ul>
       </nav>
+      <div class="right-footer-section">
+        <p>Follow us</p>
       <nav>
-        <div class="follow-us">Follow us</div>
         <ul>
-          <li>jobs</li>
-          <li>contact</li>
-          <li>legal</li>
+          <li>twitter</li>
+          <li>facebook</li>
+          <li>instagram</li>
         </ul>
       </nav>
       <p>copyright</p>
+    </div>
     </footer>
   </body>
 </html>
